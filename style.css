@@ -5,7 +5,9 @@
 body{
     margin: 0 auto;
     padding: auto;
+    width: 80%;
     font-family: 'Quicksand';
+    background-color: rgb(243, 243, 236);
 }
 
 .display-flex{
@@ -85,6 +87,107 @@ body{
     color: rgba(93, 88, 239, 1);
 }
 
+.banner-img{
+    height: 55opx;
+    width: 450px;
+    padding: 20px;
+}
+
+.banner-section{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 0px 50px;
+}
+
+.banner-content{
+    padding-left: 40px;
+}
+
+.banner-content>h1>p>button{
+    align-items: center;
+}
+
+.banner-content>p{
+    font-size: 20px;
+}
+
+.banner-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.banner-btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.curriculam{
+    margin: 30px 0px;
+    background-image: url(assets/bg.png);
+    height: 1200px;
+}
+
+.curriculam-head>h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.curriculam-cart{
+    margin-top: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.curriculam-first{
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(222, 245, 255, 1),white);
+}
+
+.curriculam-first>.curriculam-img,h3,p,h4{
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.curriculam-second{
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(222, 245, 255, 1),white);
+}
+
+.curriculam-second>.curriculam-img,h3,p,h4{
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.curriculam-third{
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(222, 245, 255, 1),white);
+}
+
+.curriculam-third>.curriculam-img,h3,p,h4{
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 @media screen and (max-width: 576px) {
     .header-section{
         justify-content: space-around;
@@ -96,5 +199,30 @@ body{
     .nav-bar , .contact-btn , .logo-section>span{
         display: none;
     }
+
+    .banner-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-img{
+        padding: 0px 0px;
+    }
+
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        margin: 0px auto;
+    }
+    .banner-content>h1,p,button{
+        align-items: center;
+        text-align: center;
+    }
+
+
    
 }
