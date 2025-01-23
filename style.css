@@ -5,7 +5,7 @@
 body{
     margin: 0 auto;
     padding: auto;
-    width: 80%;
+    /* width: 80%; */
     font-family: 'Quicksand';
     background-color: rgb(243, 243, 236);
 }
@@ -22,6 +22,10 @@ body{
     justify-content: space-around;
     width: 100%;
     height: 100px;
+}
+
+.header-section-ham{
+    display: none;
 }
 
 .logo-section{
@@ -131,16 +135,18 @@ body{
 .curriculam{
     margin: 30px 0px;
     background-image: url(assets/bg.png);
-    height: 1200px;
+    height: 600px;
 }
 
 .curriculam-head>h1{
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 50px;
 }
 
 .curriculam-cart{
     margin-top: 40px;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -159,11 +165,15 @@ body{
     text-align: center;
 }
 
+.curriculam-first h4{
+    color: rgba(100, 200, 255, 1);
+}
+
 .curriculam-second{
     width: 30%;
     padding: 15px;
     border-radius: 10px;
-    background-image: linear-gradient(rgba(222, 245, 255, 1),white);
+    background-image: linear-gradient(rgba(255, 244, 220, 1),white);
 }
 
 .curriculam-second>.curriculam-img,h3,p,h4{
@@ -173,11 +183,15 @@ body{
     text-align: center;
 }
 
+.curriculam-second h4{
+    color: rgba(240, 170, 0, 1);
+}
+
 .curriculam-third{
     width: 30%;
     padding: 15px;
     border-radius: 10px;
-    background-image: linear-gradient(rgba(222, 245, 255, 1),white);
+    background-image: linear-gradient(rgba(242, 232, 255, 1),white);
 }
 
 .curriculam-third>.curriculam-img,h3,p,h4{
@@ -187,6 +201,126 @@ body{
     text-align: center;
 }
 
+.curriculam-third h4{
+    color: rgba(135, 0, 255, 1);
+}
+
+.pre-next{
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+
+
+.pre, .next{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(254, 163, 1, 1);
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    color: white;
+}
+
+.story{
+    margin: 30px 0px;
+    background-image: url(assets/bg.png);
+    height: 600px;
+}
+
+.story-head>h1{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.story-cart{
+    display: flex;
+    justify-content: center;
+}
+
+.story-one{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.story-one-img{
+    width: 100%;
+    position: relative;
+}
+
+.story-one-btn>button{
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.story-one>img{
+    width: 100%;
+    border-radius: 10%;
+}
+
+.story-one-cont{
+    background-color: white;
+    display: grid;
+    justify-content: start;
+}
+
+.footer-section{
+    width: 100%;
+    background-color: rgba(1, 172, 253, 1);
+    padding: 100px 200px;
+}
+
+.footer-logo{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-content>h3{
+    color: white;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-main{
+    justify-content: space-between;
+}
+
+.footer-left{
+    width: 30%;
+}
+
+.footer-left-p>p{
+    color: white;
+    word-wrap: normal;
+    text-align: left;
+}
+
+.footer-mid{
+    color: white;
+    width: 30%;
+}
+
+.footer-mid>div>ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-right{
+    color: white;
+    width: 30%;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .header-section{
@@ -194,7 +328,14 @@ body{
         width: 100%;
         height: 100px;
         border: 2px solid rgb(254 163 1);
+        
     }
+
+    /* .header-section-ham{
+        display: block;
+        height: 50px;
+        width: 50px;
+    } */
 
     .nav-bar , .contact-btn , .logo-section>span{
         display: none;
@@ -204,10 +345,18 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0px 0px;
     }
 
     .banner-img{
+        margin: 0px auto;
         padding: 0px 0px;
+    }
+
+    .banner-img>img{
+        margin: 0px auto;
+        padding: 0px 0px;
+        width: 400px;
     }
 
     .banner-content{
@@ -218,11 +367,33 @@ body{
         padding: 0px 0px;
         margin: 0px auto;
     }
+
     .banner-content>h1,p,button{
         align-items: center;
         text-align: center;
     }
 
+    .curriculam-cart{
+        display: grid;
+        width: 100%;
+    }
 
+    .curriculam-first, .curriculam-second, .curriculam-third{
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .pre-next{
+        display: none;
+    }
+
+    .footer-section{
+        padding: 0px 0px;
+    }
+
+    .footer-main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
    
 }
