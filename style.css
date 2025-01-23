@@ -28,6 +28,11 @@ body{
     display: none;
 }
 
+.header-section-ham> i {
+    font-size: 30px;
+    color: black;
+}
+
 .logo-section{
     align-items: center;
 }
@@ -92,9 +97,12 @@ body{
 }
 
 .banner-img{
-    height: 55opx;
-    width: 450px;
+    width: 30%;
     padding: 20px;
+}
+
+.banner-img>img{
+    width: 100%;
 }
 
 .banner-section{
@@ -385,8 +393,6 @@ body{
 
     .header-section-ham{
         display: block;
-        height: 50px;
-        width: 50px;
     }
 
     .nav-bar , .contact-btn , .logo-section>span{
@@ -408,7 +414,7 @@ body{
     .banner-img>img{
         margin: 0px auto;
         padding: 0px 0px;
-        width: 400px;
+        width: 100%;
     }
 
     .banner-content{
