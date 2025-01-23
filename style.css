@@ -315,7 +315,6 @@ body{
 .footer-section{
     width: 100%;
     background-color: rgba(1, 172, 253, 1);
-    padding: 100px 200px;
 }
 
 .footer-logo{
@@ -331,6 +330,7 @@ body{
 
 .footer-main{
     justify-content: space-between;
+    justify-content: center;
 }
 
 .footer-left{
